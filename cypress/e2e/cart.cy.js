@@ -10,7 +10,7 @@ describe('cart spec', () => {
       cy.url().should('eq', 'https://www.saucedemo.com/inventory.html')
       cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
       cy.get('.shopping_cart_badge').invoke('text').then(nbProduct =>{
-        expect(nbProduct).to.eq('1')
+        expect(nbProduct).to.eq('2')
       })
     })
 })
